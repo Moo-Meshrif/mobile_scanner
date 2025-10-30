@@ -1,7 +1,10 @@
 /// A URL and title from a `MEBKM:` or similar QRCode type.
 class UrlBookmark {
   /// Construct a new [UrlBookmark] instance.
-  const UrlBookmark({required this.url, this.title});
+  const UrlBookmark({
+    this.title,
+    required this.url,
+  });
 
   /// Construct a new [UrlBookmark] instance from the given [data].
   factory UrlBookmark.fromNative(Map<Object?, Object?> data) {
